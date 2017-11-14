@@ -1,3 +1,8 @@
+main.container{
+  padding: 5px;
+  padding-top: 25px;
+}
+
 main .container-new-tweet{
   background-color: #EEE;
   margin: 0.5em;
@@ -6,24 +11,19 @@ main .container-new-tweet{
   padding: 1em;
 }
 
-.container{
-  padding: 5px;
-  padding-top: 25px;
-}
-
-.tweet-input-box{
+textarea.tweet{
   z-index: 0;
   width: 100%;
   margin-top: 10px;
   height:50px;
 }
 
-.counter{
+main .counter{
   float: right;
   margin-top: 5px;
 }
 
-.compose-tweet-title{
+h2.title{
   margin-top: -5px;
   border-bottom: 1px solid black
 }
