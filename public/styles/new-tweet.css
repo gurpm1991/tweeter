@@ -1,0 +1,29 @@
+main .container-new-tweet{
+  background-color: #EEE;
+  margin: 0.5em;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  padding: 1em;
+}
+
+.container{
+  padding: 5px;
+  padding-top: 25px;
+}
+
+.tweet-input-box{
+  z-index: 0;
+  width: 100%;
+  margin-top: 10px;
+  height:50px;
+}
+
+.counter{
+  float: right;
+  margin-top: 5px;
+}
+
+.compose-tweet-title{
+  margin-top: -5px;
+  border-bottom: 1px solid black
+}
