@@ -6,7 +6,8 @@ main .display-tweet-container {
   opacity: 0.5;
 }
 
-main .display-tweet-container:hover {
+main .display-tweet-container:hover ,
+main .display-tweet-container:hover .tools {
   opacity: 1;
 }
 
@@ -45,7 +46,7 @@ h4.username {
 main .tweet-body{
   height: 100px;
   font-weight: normal;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 10px;
 }
 
@@ -62,9 +63,5 @@ main .tweet-body{
   margin-top: 10px;
   margin-right: 10px;
   opacity: 0.1;
-}
-
-.tools:hover{
-  opacity: 1.0;
 }
 
