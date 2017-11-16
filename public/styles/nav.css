@@ -20,5 +20,22 @@
 #nav-bar .header {
   font-size: 200%;
   line-height: 80px;
+}
 
+#nav-bar .compose-button {
+  float: right;
+  padding: 15px;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: white;
+  opacity: 0.5;
+  font-size: 25px;
+  color: #33988e;
+}
+
+#nav-bar .compose-button:hover {
+  opacity: 1;
+  color: black;
 }
