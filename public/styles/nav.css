@@ -21,6 +21,7 @@
 #nav-bar .header {
   font-size: 200%;
   line-height: 80px;
+  font-weight: bold;
 }
 
 #nav-bar .compose-button {
@@ -33,7 +34,7 @@
   background-color: white;
   opacity: 0.5;
   font-size: 25px;
-  color: #33988e;
+  color: #426e86;
 }
 
 #nav-bar .compose-button:hover {
