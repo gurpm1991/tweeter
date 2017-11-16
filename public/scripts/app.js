@@ -1,32 +1,4 @@
-function parseHumanDate(timeCreated) {
-    var created = new Date(timeCreated);
-    var seconds = Math.floor((Date.now() - created) / 1000);
-    var interval = Math.floor(seconds / 31536000);
-    
-    if (interval > 1) {
-        return interval + ' years';
-    }
-    interval = Math.floor(seconds / 2592000);
-    if (interval > 1) {
-        return interval + ' months';
-    }
-    interval = Math.floor(seconds / 86400);
-    if (interval > 1) {
-        return interval + ' days';
-    }
-    interval = Math.floor(seconds / 3600);
-    if (interval > 1) {
-        return interval + ' hours';
-    }
-    interval = Math.floor(seconds / 60);
-    if (interval > 1) {
-        return interval + ' minutes';
-    }
-    return Math.floor(seconds) + ' seconds';
-};
-
 $(document).ready(function() {
-
   function createTweetElement(tweet){
     var safeHTML = `<p>${escape(tweet.content.text)}</p>`;
     var $tweet = 
@@ -47,8 +19,7 @@ $(document).ready(function() {
           </div>
           <h3 class="time-stamp">${parseHumanDate(tweet.created_at)}</h3>
         </footer> 
-      </article>`
-    
+      </article>`   
     return $tweet;
   };
 
@@ -88,6 +59,7 @@ $(document).ready(function() {
     } else {
       $.post("/tweets/", data, function(result) {
         loadTweets();
+        inputData = $(".tweet").val('');
       });
     };
   });
@@ -97,3 +69,30 @@ $(document).ready(function() {
     $("textarea").focus();
   })
 });
+
+function parseHumanDate(timeCreated) {
+    var created = new Date(timeCreated);
+    var seconds = Math.floor((Date.now() - created) / 1000);
+    var interval = Math.floor(seconds / 31536000);
+    
+    if (interval > 1) {
+        return interval + ' years';
+    }
+    interval = Math.floor(seconds / 2592000);
+    if (interval > 1) {
+        return interval + ' months';
+    }
+    interval = Math.floor(seconds / 86400);
+    if (interval > 1) {
+        return interval + ' days';
+    }
+    interval = Math.floor(seconds / 3600);
+    if (interval > 1) {
+        return interval + ' hours';
+    }
+    interval = Math.floor(seconds / 60);
+    if (interval > 1) {
+        return interval + ' minutes';
+    }
+    return Math.floor(seconds) + ' seconds';
+};
