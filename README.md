@@ -6,9 +6,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ##Final Product
 
-!["This is my Non-Toggle Page"](https://github.com/gurpm1991/tinyApp/blob/master/screenshots/nonToggle.png)
+!["This is my Non-Toggle Page"](https://github.com/gurpm1991/tweeter/blob/master/screenshots/nonToggle.png)
 
-!["This is my Toggle Page"](https://github.com/gurpm1991/tinyApp/blob/master/screenshots/toggle.png)
+!["This is my Toggle Page"](https://github.com/gurpm1991/tweeter/blob/master/screenshots/toggle.png)
 
 
 ## Getting Started
