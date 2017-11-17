@@ -54,14 +54,14 @@ $(document).ready(function() {
 
     if (inputData === "" || null) {
       alert ("No Empty Tweets Allowed!")
-    } else if (inputData >= 141) {
+    } else if (inputData.length >= 141) {
       alert ("Keep it under 140 characters bro!")
     } else {
       $.post("/tweets/", data, function(result) {
         loadTweets();
-        inputData = $(".tweet").val('');
       });
     };
+    $(".tweet").val(''); 
   });
 
   $(".compose-button").click(function(){

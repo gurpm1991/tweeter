@@ -49,8 +49,11 @@ h4.username {
 main .tweet-body{
   height: 100px;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  word-wrap: break-word;
 }
 
 .time-stamp {
